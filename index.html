@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <link rel="stylesheet" href="/css/style1.css">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
        <title>Brandon Singh</title>
 
     </head>
 
     <body>
-        <h1 id="heading"> Welcome to my page! </h1>
+        <h1 id="heading" class="container text-center"> Welcome to my page! </h1>
         
-        
-        <div id="Menu">
-        <h1>Menu</h1>
-        <ol>
+        <div class="container">
+            <div class="row">
+        <div id="Menu" class="col">
+        <h1 class="display-4 text-center">Menu</h1>
+        <ol >
             <li><a href="#Basic">Basic Information</a></li>
             <li><a href="#Eduation">Education</a></li>
             <li><a href="#Experience">Work Experience</a></li>
@@ -25,28 +30,32 @@
         
         </div>
         
-        <div id="Basic">
-        <h1>Basic Information</h1>
+        <div id="Basic" class="col">
+        <h1 class="display-3 text-center">Basic Information</h1>
         
-        <h2>About me:</h2>
-        <p>My name is Brandon Singh.<br>
+        <h2 class="display-4 text-center">About me:</h2>
+        <p class="text-center">My name is Brandon Singh.<br>
              I am currently a major in Computer Science, and I am currently not minoring in anything.<br>
              This is my profile picture:
             </p>
-        <img src="/img/pfp.png" alt="My profile picture." class="center"
+        <img src="/img/pfp.png" alt="My profile picture." class="img-fluid rounded mx-auto d-block"
         style="width:25%;height:25%;">
         
         </div>
+            </div>
+        </div>
         
-        <div id="Education">
-        <h2>Education Summary</h2>
+    <div class="container">
+        <div class="row">
+        <div id="Education" class="col">
+        <h2 class="display-4">Education Summary</h2>
         <p>I am currently a junior at St. John's University. <br>
              Currently I am pursuing a bachelor's degree in Computer Science, and I currently have a high school degree.</p>
         
         </div>
         
-        <div id="Experience">
-        <h2>Work Experience</h2>
+        <div id="Experience" class="col">
+        <h2 class="display-4">Work Experience</h2>
         <ul>
             <li>Cashier Experience at Kohl's Department Store</li>
             <li>Freelance self taught photographer</li>
@@ -55,8 +64,8 @@
         
         </div>
         
-        <div id="Skills">
-        <h2>Programming Skills</h2>
+        <div id="Skills" class="col">
+        <h2 class="display-4">Programming Skills</h2>
         <ul>
             <li>Intermediate knowledge of <span style="color:mediumpurple">Java</span> and <span style="color:mediumpurple">OOP</span></li>
             <li>Intermediate knowledge of the <span style="color:mediumpurple">Linux Command Line</span></li>
@@ -64,36 +73,41 @@
         </ul>
         
         </div>
-        
-        <div id="Interests">
-        <h1>General Interests</h1>
-        <h2>My Favorite Song</h2>
-        <p>My favorite song is Chicago Freestyle by Drake. </p>
+    </div>
+        <div id="Interests" class="col">
+        <h1 class="display-4 text-center">General Interests</h1>
+        <h2 class="h2 text-center">My Favorite Song</h2>
+        <p class="text-center">My favorite song is Chicago Freestyle by Drake. </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0jz0GAFNNIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>My Favorite Film</h2>
-        <p>My favorite film is Hereditary by Ari Aster.</p>
+        <h2 class="h2 text-center">My Favorite Film</h2>
+        <p class="text-center">My favorite film is Hereditary by Ari Aster.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/V6wWKNij_1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>My Favorite TV Show</h2>
-        <p>My favorite TV show is Prison Break.</p>
+        <h2 class="h2 text-center">My Favorite TV Show</h2>
+        <p class="text-center">My favorite TV show is Prison Break.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/der8A7Z9u7c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         </div>
+    </div>
+    <div class="container">
+        <div class="row">
 
-        <div id="Sites">
-        <h1>Favorite Websites</h1>
+        <div id="Sites" class="col">
+        <h1 class="display-4 text-center">Favorite Websites</h1>
         <ol>
             <li>My favorite website is my own website, which serves as my portfolio. <a href="https://www.bdotsingh.com/" target="_blank">Here is my website.</a></li>
-            <li>My next favorite website is YouTube, where I spend a lot of time watching random videos. <a href="https://www.youtube.com"target="_blank">Visit YouTube</a> <img src="https://cdn.mos.cms.futurecdn.net/SytNGv3ZxAVCkvcspmbbvh-320-80.jpg" alt="YouTube Logo"></li>
-            <li>My third favorite website is Twitter, where I interact with my friends and follow other people. <a href="https://www.twitter.com"target="_blank">Visit Twitter</a><img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-articleLarge-v4.jpg" alt="Twitter Logo" style="width:25%;height:25%;"></li>
+            <li>My next favorite website is YouTube, where I spend a lot of time watching random videos. <a href="https://www.youtube.com"target="_blank">Visit YouTube</a> <img src="https://cdn.mos.cms.futurecdn.net/SytNGv3ZxAVCkvcspmbbvh-320-80.jpg" alt="YouTube Logo" class="img-fluid rounded mx-auto d-block"></li>
+            <li>My third favorite website is Twitter, where I interact with my friends and follow other people. <a href="https://www.twitter.com"target="_blank">Visit Twitter</a><img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-articleLarge-v4.jpg" alt="Twitter Logo" style="width:25%;height:25%;" class="img-fluid rounded mx-auto d-block"></li>
         </ol>
         </div>
         
         
-        <div id="Projects">
-            <h1>My Projects</h1>
+        <div id="Projects" class="col">
+            <h1 class="display-4 text-center">My Projects</h1>
             <ol>
                 <li><a href="#Menu">Milestone 1</a></li>
             </ol>
         </div>
+        </div>
+    </div>
     </body>
     </html>
